@@ -336,7 +336,6 @@ public class VersatileControllerVirtual : MonoBehaviour
         {
             if (isIOS)
             {
-                Debug.LogWarning("iOS");
                 transform.Rotate(new Vector3(-x, -z, -y), Space.Self);
 
                 // Correct for rotational drift in iOS. This comes from slight differences in the gyro.updateInterval and the phone's frame rate.
